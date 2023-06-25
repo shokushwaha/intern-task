@@ -4,7 +4,6 @@ Built using nextjs and tailwindcss and openweather api
 
 
 
-To run the project:
 ## Features
 1. User's ability to search cities
 
