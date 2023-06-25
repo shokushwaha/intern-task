@@ -1,7 +1,7 @@
 // main page of the app to show all the components
 'use client'
 import { useState, useEffect } from "react";
-import { ContentBox, DateAndTime, ErrorScreen, FutureForecast, Header, LoadingScreen, MainCard, NavBar, NextDaysForecast, Search, UnitSwitch, MetricsBox } from "@/components";
+import { ContentBox, DateAndTime, ErrorScreen, FutureForecast, Header, LoadingScreen, MainCard, NavBar, NextDaysForecast, Search, UnitSwitch, MetricsBox, Footer } from "@/components";
 import { motion } from "framer-motion";
 export const App = () => {
   const [cityInput, setCityInput] = useState("Delhi");
@@ -93,6 +93,7 @@ export const App = () => {
         }
       </FutureForecast>
 
+      <Footer />
     </>
   ) : weatherData && weatherData.message ? (
     <ErrorScreen errorMessage="City not found, try again!">
@@ -105,7 +106,6 @@ export const App = () => {
   ) : (
     <LoadingScreen loadingMessage="Loading data..." />
   );
-
 };
 
 export default App;

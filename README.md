@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Weather App
+Built using nextjs and tailwindcss and openweather api
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the project:
+## Features
+1. User's ability to search cities
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. Current local time and date
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Minimum, Maximum and current temperatures and humidity
 
-## Learn More
+4. Wind speed and direction
 
-To learn more about Next.js, take a look at the following resources:
+5. Sunrise and sunset times
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Metric vs Imperial system
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. Forecast of next 12 Hours
 
-## Deploy on Vercel
+8. Forecast of next 4 days
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9. Error handling and loading info
+## Live Testing
+Deployed Link - https://intern-task-three.vercel.app/
+## To run the project locally
+1. npm install
+2. Log-in to Openweathermap.com
+3. Create an API key
+4. Paste API key for OPENWEATHER_API_KEY
+5. npm run dev
+## Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run this project, you will need to add the following environment variables to your .env file
+
+`OPENWEATHER_API_KEY`
+
+
+
